@@ -9,82 +9,99 @@
 
 <body>
 
-  <header class="text-gray-600 body-font bg-blue-600">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg">
+  <header class="text-gray-600 body-font bg-gradient-to-b from-blue-700 to-blue-400">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto bg text-white">
-        <a href="index.html" class="mr-5 hover:text-black">Home</a>
-        <a href="portofolio.html" class="mr-5 hover:text-black">Portofolio</a>
-        <a href="contact.html" class="mr-5 hover:text-black">Contact</a>
+        <a href="index.html" class="navMenu">Home</a>
+        <a href="portofolio.html" class="navMenu">Portofolio</a>
+        <a href="contact.html" class="navMenu">Contact</a>
       </nav>
     </div>
   </header>
 
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-12">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Let's Get Connected</h1>
-      <div class="mb-4">
-        <div class="h-1 mx-auto bg-blue-500 w-1/4 opacity-75 my-0 py-0 rounded"></div>
-      </div>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Butuh konsultasi atau ada yang ingin di diskusikan ?
-        Silahkan tinggalkan pesan..</p>
-    </div>
 
-    <div class="lg:w-1/2 md:w-2/3 mx-auto">
-      <div class="flex flex-wrap -m-2">
-        <div class="p-2 w-1/2">
-          <div class="relative">
-            <label for="name" class="leading-7 text-sm text-gray-600">Nama Lengkap</label>
-            <input type="text" id="name" name="name"
-              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-          </div>
+  <section class="text-white body-font">
+    <div class="container px-5 py-4 mx-auto">
+      <div class="flex items-center justify-center">
+        <div class="font-semibold text-center">
+          <h1 class="text-3xl text-gray-700">Let's Get Connected</h1>
+          <div class="line w-80"></div>
         </div>
-        <div class="p-2 w-1/2">
-          <div class="relative">
-            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-            <input type="email" id="email" name="email"
-              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-          </div>
+      </div>
+      <div class="max-w-lg mx-auto my-10 bg-gradient-to-b from-blue-700 to-blue-400 p-4 rounded-md shadow-sm">
+        <div class="text-center">
+          <p class="text-white">Butuh konsultasi atau ada yang ingin di diskusikan ?
+            <br>Silahkan tinggalkan pesan..</p>
         </div>
-        <div class="p-2 w-full">
-          <div class="relative">
-            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-            <textarea id="message" name="message"
-              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-          </div>
+        <div class="m-7">
+          <form>
+            <div class="mb-6">
+              <label for="name" class="block mb-2 text-sm text-white">Full
+                Name</label>
+              <input type="text" name="name" placeholder="Full Name"
+                class="fieldContact">
+            </div>
+            <div class="mb-6">
+              <label for="phone" class="text-sm text-white">Phone Number</label>
+              <input type="text" name="phone" placeholder="+62 852 xxx xxx"
+                class="fieldContact">
+            </div>
+
+            <div class=" mb-6">
+              <label for="email" class="block mb-2 text-sm text-white">Email
+                Address</label>
+              <input type="email" name="email" placeholder="email@email.com"
+              class="fieldContact">
+            </div>
+
+            <div class="mb-6">
+              <label for="message" class="block mb-2 text-sm text-white">Message</label>
+
+              <textarea rows="5" name="message" placeholder="Your Message"
+                class="fieldContact"></textarea>
+            </div>
+            <div class="mb-6">
+              <button type="submit"
+                class="w-full px-3 py-4 text-white bg-blue-600 rounded-md hover:bg-blue-800 ">Send
+                Message</button>
+            </div>
+         </form>
         </div>
-        <div class="p-2 w-full">
-          <button
-            class="flex mx-auto text-white bg-blue-600 border-0 py-2 px-8 focus:outline-none hover:bg-sky-500 rounded text-lg">Send</button>
-        </div>
-        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-          <p class="leading-normal my-5">Join My Social Media
-          </p>
-          <span class="inline-flex">
-            <a href="https://www.facebook.com/reza.agi.3" class="m-1">
-              <img src=../images/fb.png alt="FB" width="50" height="50">
-            </a>
-            <a href="https://www.instagram.com/rezagi66" class="m-1">
-              <img src=../images/ig.png alt="IG" width="50" height="50">
-            </a>
-            <a href="https://api.whatsapp.com/send/?phone=628220106069" class="m-1">
-              <img src=../images/wa.png alt="WA" width="50" height="50">
-            </a>
-            <a href="https://twitter.com/rezaagi" class="m-1">
-              <img src=../images/twitter.png alt="Twitter" width="50" height="50">
-            </a>
-            <a href="https://www.linkedin.com/in/reza-agi-694aa788/" class="m-1">
-              <img src=../images/linkedin.png alt="Linkedin" width="50" height="50">
-            </a>
-          </span>
-        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container px-5 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <div class="w-full text-center">
+        <p class="leading-normal my-5">Join My Social Media
+        </p>
+        <span class="inline-flex">
+          <a href="https://www.facebook.com/reza.agi.3" class="m-1">
+            <img src=../images/fb.png alt="FB" width="50" height="50">
+          </a>
+          <a href="https://www.instagram.com/rezagi66" class="m-1">
+            <img src=../images/ig.png alt="IG" width="50" height="50">
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=628220106069" class="m-1">
+            <img src=../images/wa.png alt="WA" width="50" height="50">
+          </a>
+          <a href="https://twitter.com/rezaagi" class="m-1">
+            <img src=../images/twitter.png alt="Twitter" width="50" height="50">
+          </a>
+          <a href="https://www.linkedin.com/in/reza-agi-694aa788/" class="m-1">
+            <img src=../images/linkedin.png alt="Linkedin" width="50" height="50">
+          </a>
+        </span>
       </div>
     </div>
   </div>
+  </div>
   </section>
   <footer class="bg-white" aria-labelledby="footer-heading">
-    <div class="px-4 py-4 mx-auto bg-blue-500">
+    <div class="px-4 py-4 mx-auto bg-gradient-to-b from-blue-700 to-blue-400">
       <div class="flex flex-wrap items-baseline lg:justify-center">
-        <span class="mt-2 text-sm text-white"> Copyright © 2022 Reza Agi Hermawan Nasuha </span>
+        <span class="mt-2 text-sm text-white font-bold"> Copyright © 2022 Reza Agi Hermawan Nasuha </span>
       </div>
     </div>
   </footer>
